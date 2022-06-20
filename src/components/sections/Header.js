@@ -10,7 +10,7 @@ const Header = () => {
       <div className="bottom-header">
         <div className="bottom-header-text">
           <h1>Welcome to your next growth opportunity.</h1>
-          <p>
+          <p className="sub-text">
             Get connected with full time, freelance and remote jobs that are
             suited just for you and meet your prerequisite.
           </p>
@@ -30,8 +30,8 @@ export default Header;
 const StyledHeader = styled.header`
   display: flex;
   flex-direction: column;
-  /* background: linear-gradient(, white); */
-  background-color: #e5e5e5;
+  background: linear-gradient(#eef5ff, white), url("../../images/background.png");
+
   padding: 1rem 3rem;
 
   .bottom-header {

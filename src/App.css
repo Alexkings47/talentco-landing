@@ -17,9 +17,24 @@ body {
 }
 
 .trans-btn {
-  color: #3789ff;
-  border: 2px solid;
+  color: #3789ff !important;
+  border: 2px solid #3789ff !important;
 }
 .blue-btn {
   background-color: #3789ff;
 }
+.sub-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 25px;
+  color: #94a2b3;
+}
+/* 
+@media screen and (max-width: 1000px) {
+  body{
+    font-size: 90%;
+  }
+  .trans-btn, .blue-btn {
+    width: 8rem;
+  }
+} */

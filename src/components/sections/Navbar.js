@@ -39,11 +39,11 @@ const StyledNav = styled.nav`
   position: relative;
 
   .logo {
-    /* width: 21rem; */
-    /* width: 211px; */
-    height: 74px;
+   max-width: 21.1rem;
+   /* width: 211px; */
+    /* height: 74px; */
   }
-   
+
   .button-div,
   .flexed-list {
     display: flex;
@@ -57,7 +57,10 @@ const StyledNav = styled.nav`
   }
   @media screen and (max-width: 1000px) {
     .nav-menu-icon {
-      display: block;
+      display: none;
+    }
+    .button-div{
+        min-width: 20rem;
     }
     .flexed-list {
       display: ${(props) => (props.menu ? "flex" : "none")};
