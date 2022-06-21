@@ -37,19 +37,28 @@ const StyledNav = styled.nav`
   align-items: center;
   width: 100%;
   position: relative;
+  padding: 1rem 2rem;
 
   .logo {
-   max-width: 21.1rem;
-   /* width: 211px; */
-    /* height: 74px; */
+    max-width: 18rem;
   }
-
-  .button-div,
   .flexed-list {
     display: flex;
-    min-width: 27rem;
+    list-style: none;
+    font-weight: 600;
+    font-size: 14.5px;
+    min-width: 25rem;
     justify-content: space-between;
     align-items: center;
+  }
+  .button-div {
+    display: flex;
+    min-width: 25rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .flexed-list {
+    min-width: 35rem;
   }
   .nav-menu-icon {
     display: none;
@@ -59,8 +68,8 @@ const StyledNav = styled.nav`
     .nav-menu-icon {
       display: none;
     }
-    .button-div{
-        min-width: 20rem;
+    .button-div {
+      min-width: 20rem;
     }
     .flexed-list {
       display: ${(props) => (props.menu ? "flex" : "none")};

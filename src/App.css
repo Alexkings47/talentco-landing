@@ -6,15 +6,7 @@
 }
 body {
 }
-.flexed-list {
-  display: flex;
-  list-style: none;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
-}
+
 
 .trans-btn {
   color: #3789ff !important;
@@ -23,11 +15,18 @@ body {
 .blue-btn {
   background-color: #3789ff;
 }
-.sub-text {
+.sub-text,
+.sub-text-white {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 25px;
+  font-size: 13.5px;
+  line-height: 30px;
   color: #94a2b3;
+}
+.gold-btn {
+  background-color: #ffba49;
+}
+.sub-text-white {
+  color: white;
 }
 /* 
 @media screen and (max-width: 1000px) {

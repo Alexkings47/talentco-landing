@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Button from "../Button";
 import Navbar from "./Navbar";
+import imgBack from "../../images/background.png";
 
 const Header = () => {
   return (
@@ -30,9 +31,15 @@ export default Header;
 const StyledHeader = styled.header`
   display: flex;
   flex-direction: column;
-  background: linear-gradient(#eef5ff, white), url("../../images/background.png");
-
-  padding: 1rem 3rem;
+  background: url(${imgBack}); /*fall back */
+  background: url(${imgBack}), linear-gradient(to bottom, #eef5ff, white);
+  /* filter: sepia(); */
+  background-position: right top;
+  background-size: cover;
+  padding: 1rem 1rem;
+  background-repeat: no-repeat;
+  background-position: 100% 10%;
+  background-size: 20rem, cover;
 
   .bottom-header {
     display: flex;
@@ -42,9 +49,17 @@ const StyledHeader = styled.header`
   .bottom-header-text {
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
     flex-direction: column;
+    min-height: 12.5rem;
+    padding-left: 4rem;
+    width: 35%;
+  }
+  h1 {
+   
+    font-size: 35px;
   }
   .header-image {
-    width: 50%;
+    max-width: 45%;
   }
 `;

@@ -19,10 +19,12 @@ const StyledDiv = styled.div`
   display: flex;
   padding-top: ${props => props.offset};
   flex-direction: column;
-  max-height: 300px;
+  min-height: 23rem;
+  justify-content: space-between;
   align-items: flex-start;
   max-width: 20rem;
   text-align: left;
+
   img {
     max-width: 100%;
     padding: 0;

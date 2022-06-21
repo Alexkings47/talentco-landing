@@ -28,7 +28,7 @@ const Modes = () => {
             "Work and Study? No Problem! We help you find the most suitable jobs for your schedule"
           }
           imgUrl={"paypal.png"}
-          offset={"2rem"}
+          offset={"4rem"}
         />
         <ModeCard
           title={"Freelance"}
@@ -36,7 +36,7 @@ const Modes = () => {
           desc={
             "Are one off gigs your preference? Talentco helps you find freelance jobs of your choice"
           }
-          offset={"4rem"}
+          offset={"8rem"}
         />
       </div>
     </StyledSection>
@@ -49,7 +49,7 @@ const StyledSection = styled.section`
   text-align: center;
 
   .mode-text {
-    max-width: 60%;
+    max-width: 70%;
     margin: 0 auto;
   }
   .cards {

@@ -8,7 +8,7 @@ const Button = ({ value, color }) => {
 const StyledButton = styled.button`
   padding: 10px 1rem;
   border: none;
-  max-width: 200px;
+  width: 175px;
   height: 47px;
   position: relative;
   /* font-family: ; */
@@ -29,10 +29,10 @@ const StyledButton = styled.button`
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 1;
+    opacity: 0.7;
   }
   &:hover::before {
-    transform: scaleY(1.3) scaleX(1.1); 
+    transform: scaleY(1.3) scaleX(1.1);
   }
 `;
 export default Button;
