@@ -14,7 +14,7 @@ const Features = () => {
         />
         <div className="featured-text">
           <h3>
-            A one-Stop <br /> Platform
+            A One-Stop <br /> Platform
           </h3>
           <p className="sub-text-white">
             You connect with TalentCo We communicate with dozens of companies,
@@ -49,14 +49,14 @@ const StyledSection = styled.section`
   background: url(${background}), url(${back2});
   background-color: #3789ff;
   background-repeat: no-repeat;
-  background-position: right top, 20% 20%;
+  background-position: right top, 28% 20%;
   background-size: 15rem, 15rem;
   padding: 0 8rem 3rem 8rem;
   position: relative;
   color: white;
   /* margin-bottom: 4rem; */
   display: grid;
-  height: 80vh;
+  height: 75vh;
 
   .item1,
   .item2 {
@@ -72,6 +72,7 @@ const StyledSection = styled.section`
   }
   .item2 {
     padding-left: 10rem;
+    margin-top: 4rem;
   }
 
   .feature-img {
