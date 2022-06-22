@@ -78,7 +78,9 @@ const StyledSection = styled.section`
     align-self: flex-end;
     margin-top: 2rem;
   }
-
+h3{
+  color: white;
+}
   .feature-img,
   .feature-img2 {
     max-height: 20rem;
