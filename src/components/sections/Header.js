@@ -53,7 +53,7 @@ const StyledHeader = styled.header`
     flex-direction: column;
     min-height: 12.5rem;
     padding-left: 4rem;
-    width: 35%;
+    max-width: 35%;
   }
   h1 {
    

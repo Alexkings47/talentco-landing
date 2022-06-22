@@ -45,7 +45,7 @@ const Modes = () => {
 
 export default Modes;
 const StyledSection = styled.section`
-  padding: 1rem 4rem;
+  padding: 1rem 4rem 3rem;
   text-align: center;
 
   .mode-text {

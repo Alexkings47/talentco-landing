@@ -7,7 +7,6 @@
 body {
 }
 
-
 .trans-btn {
   color: #3789ff !important;
   border: 2px solid #3789ff !important;
@@ -27,6 +26,7 @@ body {
 }
 .sub-text-white {
   color: white;
+  font-size: 12px;
 }
 /* 
 @media screen and (max-width: 1000px) {

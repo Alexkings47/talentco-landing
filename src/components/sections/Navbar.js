@@ -40,7 +40,7 @@ const StyledNav = styled.nav`
   padding: 1rem 2rem;
 
   .logo {
-    max-width: 18rem;
+    max-width: 12rem;
   }
   .flexed-list {
     display: flex;

@@ -15,6 +15,9 @@ const StyledButton = styled.button`
   color: white;
   z-index: 0;
   border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 600;
+  font-size: 14px;
 
   &::before {
     content: "";
@@ -33,6 +36,12 @@ const StyledButton = styled.button`
   }
   &:hover::before {
     transform: scaleY(1.3) scaleX(1.1);
+  }
+  @media (max-width: 1000px) {
+    max-width: 9rem;
+    padding: 6px .5rem;
+
+    font-size:11px ;
   }
 `;
 export default Button;

@@ -37,7 +37,6 @@ const Footer = () => {
 };
 
 const StyledFooter = styled.footer`
-margin-top: 4rem;
   padding: 5rem 8rem 1rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(135px, 250px));
