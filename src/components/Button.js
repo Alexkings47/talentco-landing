@@ -37,7 +37,7 @@ const StyledButton = styled.button`
   &:hover::before {
     transform: scaleY(1.3) scaleX(1.1);
   }
-  @media (max-width: 1000px) {
+  @media (max-width: 1200px) {
     max-width: 9rem;
     padding: 6px .5rem;
 

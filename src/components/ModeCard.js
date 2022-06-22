@@ -17,7 +17,7 @@ const ModeCard = ({ imgUrl, title, desc, offset }) => {
 
 const StyledDiv = styled.div`
   display: flex;
-  padding-top: ${props => props.offset};
+  padding-top: ${(props) => props.offset};
   flex-direction: column;
   min-height: 23rem;
   justify-content: space-between;
@@ -28,6 +28,9 @@ const StyledDiv = styled.div`
   img {
     max-width: 100%;
     padding: 0;
+  }
+  h3 {
+    color: #272d4e;
   }
   .learn-btn {
     color: #299ef3;
@@ -41,6 +44,11 @@ const StyledDiv = styled.div`
   }
   .learn-btn:hover::after {
     content: "lorem ipsum";
+  }
+  @media screen and (max-width: 800px) {
+    padding-top: 3.5rem;
+    align-items: center;
+    text-align: center;
   }
 `;
 export default ModeCard;

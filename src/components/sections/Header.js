@@ -31,9 +31,15 @@ export default Header;
 const StyledHeader = styled.header`
   display: flex;
   flex-direction: column;
-  background: url(${imgBack}); /*fall back */
-  background: url(${imgBack}), linear-gradient(to bottom, #eef5ff, white);
-  /* filter: sepia(); */
+  background: url(${imgBack}),
+    linear-gradient(
+      180deg,
+      rgba(236, 240, 253, 0) 0%,
+      rgba(236, 240, 253, 0.53) 14.32%,
+      #ecf0fd 45.83%,
+      rgba(236, 240, 253, 0.43) 84.33%,
+      rgba(236, 240, 253, 0) 100%
+    );
   background-position: right top;
   background-size: cover;
   padding: 1rem 1rem;
@@ -49,17 +55,35 @@ const StyledHeader = styled.header`
   .bottom-header-text {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
     flex-direction: column;
-    min-height: 12.5rem;
+    justify-content: space-between;
+    min-height: 20rem;
     padding-left: 4rem;
     max-width: 35%;
   }
   h1 {
-   
     font-size: 35px;
+    color:#272D4E;
   }
   .header-image {
     max-width: 45%;
+  }
+
+  @media screen and (max-width: 800px) {
+    .bottom-header {
+      flex-direction: column;
+      text-align: center;
+      justify-content: space-between;
+      min-height: 42rem;
+      padding-top: 2rem;
+    }
+    .bottom-header > * {
+      max-width: 70%;
+    }
+    .bottom-header-text {
+      align-items: center;
+      padding-left: 0;
+      order: 2;
+    }
   }
 `;

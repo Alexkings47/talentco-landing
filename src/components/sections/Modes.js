@@ -6,7 +6,7 @@ const Modes = () => {
   return (
     <StyledSection>
       <div className="mode-text">
-        <h3>We open you to a pool of possibilities</h3>
+        <h2>We open you to a pool of possibilities</h2>
         <p className="sub-text">
           Erase completely the stress and uncertainty of applying directly to
           companies, through job boards and dealing with a lot of recruiters.
@@ -52,9 +52,17 @@ const StyledSection = styled.section`
     max-width: 70%;
     margin: 0 auto;
   }
+  h2 {
+    color: #272d4e;
+  }
   .cards {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+  @media screen and (max-width: 800px) {
+    .cards {
+      flex-direction: column;
+    }
   }
 `;

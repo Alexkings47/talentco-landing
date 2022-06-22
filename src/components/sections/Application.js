@@ -34,10 +34,11 @@ const StyledSection = styled.section`
   );
   overflow: hidden;
   text-align: center;
+  padding-top: 3rem;
 
   .people {
-    width: 90vw;
-    margin-bottom: -3rem;
+    width: 85vw;
+    margin-bottom: -5rem;
   }
   .text-area {
     max-width: 60%;
@@ -46,10 +47,17 @@ const StyledSection = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    min-height: 15rem;
-    padding-bottom: 5rem;
+    min-height: 17rem;
+    padding-bottom: 1rem;
   }
   h2 {
     font-weight: 500;
+  }
+  @media (max-width: 1000px) {
+    .people {
+      width: 85vw;
+      margin-bottom: -3rem;
+    }
+    
   }
 `;

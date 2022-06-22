@@ -22,8 +22,12 @@ const Navbar = () => {
         <li>For Talents</li>
         <li>Job Board</li>
         <li>Blog</li>
+        <div className="button-div">
+          <Button value={"HIRE A TALENT"} color={"trans-btn"} />
+          <Button value={"APPLY AS A TALENT"} color={"blue-btn"} />
+        </div>
       </ul>
-      <div className="button-div">
+      <div className="button-div1">
         <Button value={"HIRE A TALENT"} color={"trans-btn"} />
         <Button value={"APPLY AS A TALENT"} color={"blue-btn"} />
       </div>
@@ -46,31 +50,42 @@ const StyledNav = styled.nav`
     display: flex;
     list-style: none;
     font-weight: 600;
-    font-size: 14.5px;
-    min-width: 25rem;
+    font-size: 14px;
+    flex: 0.9;
     justify-content: space-between;
     align-items: center;
   }
   .button-div {
     display: flex;
-    min-width: 25rem;
+    min-width: 23.5rem;
+    margin-left: 1rem;
     justify-content: space-between;
     align-items: center;
   }
-  .flexed-list {
-    min-width: 35rem;
+  .button-div > * {
+    /* margin-right: 1rem; */
   }
+
   .nav-menu-icon {
     display: none;
     font-size: 15px;
   }
-  @media screen and (max-width: 1000px) {
+  .button-div1{
+    display: none;
+  }
+  @media screen and (max-width: 1200px) {
+    padding: 1rem 10px;
     .nav-menu-icon {
       display: none;
     }
     .button-div {
-      min-width: 20rem;
+      min-width: 19rem;
     }
+    .flexed-list {
+      flex: 0.95;
+    }
+  }
+  @media (max-width: 1000px) {
     .flexed-list {
       display: ${(props) => (props.menu ? "flex" : "none")};
       position: absolute;
@@ -78,7 +93,17 @@ const StyledNav = styled.nav`
       left: 50%;
       transform: translateX(-50%);
       width: 30rem;
+      flex: 1;
     }
+    .button-div1{
+      min-width: 20rem;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  @media(max-width:600px){
+    flex-direction: column;
+    min-height: 10rem;
   }
 `;
 

@@ -4,8 +4,6 @@
 * {
   font-family: "Montserrat", sans-serif;
 }
-body {
-}
 
 .trans-btn {
   color: #3789ff !important;
@@ -28,12 +26,15 @@ body {
   color: white;
   font-size: 12px;
 }
-/* 
-@media screen and (max-width: 1000px) {
-  body{
-    font-size: 90%;
+ h3 {
+    color: #272d4e;
   }
-  .trans-btn, .blue-btn {
-    width: 8rem;
+  h2{
+    color: #272d4e;
   }
-} */
+@media screen and (max-width: 800px) {
+  .bottom-header {
+    flex-direction: column;
+    text-align: center;
+  }
+}

@@ -52,8 +52,8 @@ const StyledSection = styled.section`
   .underlay {
     background-color: white;
     border-radius: 20px;
-    width: 25rem;
-    height: 15rem;
+    min-width: 25rem;
+    min-height: 15rem;
     margin: 6rem auto 0;
     justify-self: center;
     border-radius: 5px;
@@ -91,5 +91,10 @@ const StyledSection = styled.section`
     width: 105%;
     height: 100%;
     box-shadow: 0px 18px 52.8537px rgba(215, 228, 249, 0.5);
+  }
+  @media (max-width:800px) {
+    .underlay{
+      min-width: 18rem;
+    }
   }
 `;
