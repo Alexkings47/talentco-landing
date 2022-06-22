@@ -11,7 +11,6 @@ const StyledButton = styled.button`
   width: 175px;
   height: 47px;
   position: relative;
-  /* font-family: ; */
   color: white;
   z-index: 0;
   border-radius: 4px;
