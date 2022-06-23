@@ -14,7 +14,7 @@ const Footer = () => {
       <ul className="footer-list">
         <li>Quick links</li>
         <li>For Companies</li>
-        <li>FOr Talents</li>
+        <li>For Talents</li>
         <li>Job Board</li>
       </ul>
       <ul className="footer-list">
@@ -44,18 +44,18 @@ const StyledFooter = styled.footer`
   justify-content: center;
   align-content: center;
   justify-items: center;
-  row-gap: 1.5rem;
+  row-gap: 2.5rem;
   color: white;
   width: 100%;
   background-color: #3789ff;
-  font-size: 13px;
+  font-size: 13.5px;
   text-transform: capitalize;
 
   .footer-list {
     display: flex;
     flex-direction: column;
-    /* border: 1px solid red; */
     align-items: flex-start;
+    justify-content: space-between;
     min-height: 8rem;
     list-style-type: none;
   }
@@ -72,9 +72,19 @@ const StyledFooter = styled.footer`
     grid-column: 1/-1;
     justify-self: center;
   }
+  @media (max-width: 800px) {
+    padding: 5rem 2rem 1rem;
+  }
+  @media (max-width: 600px) {
+    padding: 5rem 2rem 1rem;
+    font-size: 15px;
+    justify-items: flex-start;
+    justify-content: flex-start;
+    row-gap: 3rem;
 
-  @media screen and (max-width: 1000px) {
-    padding: 3rem 3rem 1rem;
+    .copyright {
+      grid-row: 5/6;
+    }
   }
 `;
 
