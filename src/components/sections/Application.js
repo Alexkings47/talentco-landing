@@ -41,7 +41,7 @@ const StyledSection = styled.section`
     margin-bottom: -5rem;
   }
   .text-area {
-    max-width: 60%;
+    width: 60%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -58,6 +58,10 @@ const StyledSection = styled.section`
       width: 85vw;
       margin-bottom: -3rem;
     }
-    
+  }
+  @media (max-width: 500px) {
+    .text-area {
+      width: 90%;
+    }
   }
 `;
