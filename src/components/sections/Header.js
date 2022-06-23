@@ -59,11 +59,11 @@ const StyledHeader = styled.header`
     justify-content: space-between;
     min-height: 20rem;
     padding-left: 4rem;
-    max-width: 35%;
+    width: 35%;
   }
   h1 {
     font-size: 35px;
-    color:#272D4E;
+    color: #272d4e;
   }
   .header-image {
     max-width: 45%;
@@ -74,16 +74,26 @@ const StyledHeader = styled.header`
       flex-direction: column;
       text-align: center;
       justify-content: space-between;
-      min-height: 42rem;
+      min-height: 43rem;
       padding-top: 2rem;
     }
-    .bottom-header > * {
-      max-width: 70%;
-    }
+
     .bottom-header-text {
       align-items: center;
       padding-left: 0;
       order: 2;
+      width: 70%;
+    }
+    .header-image {
+      max-width: 60%;
+    }
+  }
+  @media (max-width: 500px) {
+    .bottom-header-text {
+      width: 90%;
+    }
+    h1 {
+      font-size: 30px;
     }
   }
 `;

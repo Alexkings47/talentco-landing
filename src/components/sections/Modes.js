@@ -49,11 +49,12 @@ const StyledSection = styled.section`
   text-align: center;
 
   .mode-text {
-    max-width: 70%;
+    width: 75%;
     margin: 0 auto;
   }
   h2 {
     color: #272d4e;
+    padding-bottom: 1.5rem;
   }
   .cards {
     display: flex;
@@ -63,6 +64,13 @@ const StyledSection = styled.section`
   @media screen and (max-width: 800px) {
     .cards {
       flex-direction: column;
+    }
+    @media (max-width: 500px) {
+      padding: 1rem 1rem 3rem;
+
+      .mode-text {
+        width: 90%;
+      }
     }
   }
 `;
