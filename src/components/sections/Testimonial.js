@@ -10,7 +10,7 @@ const Testimonial = () => {
       <div className="underlay">
         <div className="overlay"></div>
         <div className="testimony">
-          <p className="sub-text">
+          <p className="testimony-text">
             “The consultants that reached out to me about the role were super
             helpful, understanding and amazing. They were literally with me at
             every step from the interview to the waiting process and finally to
@@ -46,14 +46,14 @@ const StyledSection = styled.section`
   align-items: center;
 
   h2 {
-    max-width: 15rem;
+    max-width: 25rem;
     font-weight: 600;
   }
   .underlay {
     background-color: white;
     border-radius: 20px;
-    min-width: 25rem;
-    min-height: 15rem;
+    min-width: 45.6rem;
+    min-height: 391px;
     margin: 6rem auto 0;
     justify-self: center;
     border-radius: 5px;
@@ -63,12 +63,14 @@ const StyledSection = styled.section`
     border: 1px solid white;
   }
   .testimony {
-    padding: 1.5rem 2rem;
+    padding: 1rem 2rem;
     background: url(${quotes});
     background-color: white;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 50% 20%;
     text-align: center;
+    display: flex;
+    align-items: center;
     box-shadow: 0px 18px 52.8537px rgba(215, 228, 249, 0.5);
     border-radius: 20px;
     position: absolute;
@@ -78,6 +80,12 @@ const StyledSection = styled.section`
     width: 110%;
     height: 100%;
     z-index: 2;
+  }
+  .testimony-text {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 40px;
+    color: #94a2b3;
   }
 
   .overlay {
@@ -92,9 +100,14 @@ const StyledSection = styled.section`
     height: 100%;
     box-shadow: 0px 18px 52.8537px rgba(215, 228, 249, 0.5);
   }
-  @media (max-width:800px) {
+  @media(max-width:1000px) {
     .underlay{
-      min-width: 18rem;
+      min-width: 30rem;
+    }
+  }
+  @media (max-width: 800px) {
+    .underlay {
+      min-width: 25rem;
     }
   }
 `;

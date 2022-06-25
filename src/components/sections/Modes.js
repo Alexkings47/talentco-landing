@@ -45,12 +45,13 @@ const Modes = () => {
 
 export default Modes;
 const StyledSection = styled.section`
-  padding: 1rem 4rem 3rem;
+  padding: 1rem 4rem 17rem;
   text-align: center;
 
   .mode-text {
     width: 75%;
     margin: 0 auto;
+    padding-bottom: 2rem;
   }
   h2 {
     color: #272d4e;
@@ -61,15 +62,17 @@ const StyledSection = styled.section`
     align-items: center;
     justify-content: space-between;
   }
+    
   @media screen and (max-width: 800px) {
     .cards {
       flex-direction: column;
     }
-    @media (max-width: 500px) {
+    @media (max-width: 550px) {
       padding: 1rem 1rem 3rem;
 
       .mode-text {
         width: 90%;
+        padding-bottom: 0;
       }
     }
   }

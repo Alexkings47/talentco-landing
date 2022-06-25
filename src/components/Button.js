@@ -6,17 +6,17 @@ const Button = ({ value, color }) => {
 };
 
 const StyledButton = styled.button`
-  padding: 10px 1rem;
+  /* padding: 13px 17px; */
   border: none;
-  width: 175px;
+  width: 200px;
   height: 47px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   position: relative;
   color: white;
   z-index: 0;
-  border-radius: 4px;
-  text-transform: uppercase;
-  font-size: 600;
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
 
   &::before {
     content: "";
@@ -36,11 +36,9 @@ const StyledButton = styled.button`
   &:hover::before {
     transform: scaleY(1.3) scaleX(1.1);
   }
-  @media (max-width: 1200px) {
+  @media (max-width: 1300px) {
     max-width: 9rem;
-    padding: 6px .5rem;
-
-    font-size:11px ;
+    font-size: 11px;
   }
 `;
 export default Button;

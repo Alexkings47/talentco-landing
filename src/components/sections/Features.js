@@ -1,9 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Button from "../Button";
-import background from "../../images/feature-back.png";
-import background3 from "../../images/feature-back2.png";
-import back2 from "../../images/backgroundleft.png";
+import background from "../../images/back.png";
+
 const Features = () => {
   return (
     <StyledSection>
@@ -19,9 +18,9 @@ const Features = () => {
               A One-Stop <br /> Platform
             </h3>
             <p className="sub-text-white">
-              You connect with TalentCo <br/> We communicate with dozens of companies,
-              platforms and hundreds of recruiters to single out the best
-              opportunity for you!
+              You connect with TalentCo <br /> We communicate with dozens of
+              companies, platforms and hundreds of recruiters to single out the
+              best opportunity for you!
             </p>
             <Button value={"Get Started"} color={"gold-btn"} />
           </div>
@@ -49,20 +48,20 @@ const Features = () => {
 
 export default Features;
 const StyledSection = styled.section`
-  background: url(${background}), url(${background3}), url(${back2});
-  background-color: #3789ff;
-  background-repeat: no-repeat;
-  background-position: 100% -20%, 85% 85%, 18% 20%;
-  background-size: 13rem, 15rem, 10rem;
+  background: url(${background}) no-repeat center/ cover;
   position: relative;
+  background-color: green;
   color: white;
-  min-height: 65vh;
+  padding: 1rem 0;
+  margin-top: 3rem;
+  border: 1px solid red;
 
   .item-box {
     display: flex;
     flex-direction: column;
-    max-width: 60rem;
+    max-width: 70rem;
     margin: 0 auto;
+    border: 1px solid red;
   }
   .item1,
   .item2 {
@@ -70,31 +69,34 @@ const StyledSection = styled.section`
     justify-content: space-between;
     align-items: center;
     max-width: 80%;
+    /* border: 1px solid red; */
   }
   .item1 {
     align-self: flex-start;
   }
   .item2 {
     align-self: flex-end;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
   }
-h3{
-  color: white;
-}
-  .feature-img,
-  .feature-img2 {
-    max-height: 20rem;
-    min-height: 15rem;
-    margin: -2rem 2rem 0 0;
+  h3 {
+    color: white;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
   }
   .feature-img2 {
-    margin: 0 0 -4rem 2rem;
+    width: 430px;
+    height: 548px;
+  }
+  .feature-img2 {
+    width: 430px;
+    height: 548px;
   }
   .featured-text,
   .featured-text2 {
-    min-width: 15rem;
-    max-width: 25rem;
-    min-height: 15rem;
+    /* min-width: 15rem; */
+    max-width: 480px;
+    min-height: 19rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -103,7 +105,6 @@ h3{
   }
 
   @media (max-width: 1000px) {
-    background-position: 100% -20%, 100% 85%, 2% 20%;
   }
 
   @media (max-width: 800px) {
@@ -116,7 +117,7 @@ h3{
   }
   @media (max-width: 600px) {
     .item1,
-    .item2{
+    .item2 {
       flex-direction: column;
     }
   }

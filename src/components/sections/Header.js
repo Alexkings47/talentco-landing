@@ -11,7 +11,7 @@ const Header = () => {
       <div className="bottom-header">
         <div className="bottom-header-text">
           <h1>Welcome to your next growth opportunity.</h1>
-          <p className="sub-text">
+          <p className="sub-text header-text">
             Get connected with full time, freelance and remote jobs that are
             suited just for you and meet your prerequisite.
           </p>
@@ -50,47 +50,64 @@ const StyledHeader = styled.header`
   .bottom-header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
   .bottom-header-text {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 20rem;
+    min-height: 35rem;
     padding-left: 4rem;
-    width: 35%;
+    max-width: 48%;
+  }
+  .header-text {
+    line-height: 25px;
   }
   h1 {
-    font-size: 35px;
+    font-size: 85px;
     color: #272d4e;
   }
   .header-image {
-    max-width: 45%;
+    max-width: 48%;
   }
 
-  @media screen and (max-width: 800px) {
+  @media (max-width: 1100px) {
+    h1 {
+      font-size: 60px;
+    }
+    .bottom-header-text {
+      min-height: 29rem;
+    }
+  }
+  @media (max-width: 800px) {
     .bottom-header {
       flex-direction: column;
       text-align: center;
       justify-content: space-between;
-      min-height: 43rem;
+      min-height: 45rem;
       padding-top: 2rem;
     }
-
+    h1 {
+      font-size: 50px;
+    }
     .bottom-header-text {
       align-items: center;
       padding-left: 0;
       order: 2;
-      width: 70%;
+      max-width: 80%;
+      min-height: 25rem;
     }
     .header-image {
       max-width: 60%;
     }
   }
-  @media (max-width: 500px) {
+  @media (max-width: 550px) {
     .bottom-header-text {
-      width: 90%;
+      max-width: 90%;
+      min-height: 20rem;
+    }
+    .bottom-header {
+      min-height: 37rem;
     }
     h1 {
       font-size: 30px;

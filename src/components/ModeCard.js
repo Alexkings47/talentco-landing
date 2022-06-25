@@ -22,18 +22,24 @@ const StyledDiv = styled.div`
   min-height: 23rem;
   justify-content: space-between;
   align-items: flex-start;
-  max-width: 20rem;
+  max-width: 430px;
+  height: 293px;
   text-align: left;
+
+
+
+
 
   img {
     max-width: 100%;
-    padding: 0;
+    height: 293px;
   }
-  h3 {
-    color: #272d4e;
-  }
+  
   .learn-btn {
     color: #299ef3;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
     border: none;
     background: none;
     display: flex;
@@ -46,7 +52,7 @@ const StyledDiv = styled.div`
     content: "lorem ipsum";
   }
   @media screen and (max-width: 800px) {
-    padding-top: 3.5rem;
+    padding: 3.5rem 5px 0;
     align-items: center;
     text-align: center;
   }

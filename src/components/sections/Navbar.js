@@ -44,20 +44,22 @@ const StyledNav = styled.nav`
   padding: 1rem 2rem;
 
   .logo {
-    max-width: 12rem;
+    max-width: 211px;
+    height: 74px;
   }
   .flexed-list {
     display: flex;
     list-style: none;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 18px;
+    line-height: 22px;
     flex: 0.9;
     justify-content: space-between;
     align-items: center;
   }
   .button-div {
     display: flex;
-    min-width: 23.5rem;
+    min-width: 25.6rem;
     margin-left: 1rem;
     justify-content: space-between;
     align-items: center;
@@ -70,10 +72,10 @@ const StyledNav = styled.nav`
     display: none;
     font-size: 15px;
   }
-  .button-div1{
+  .button-div1 {
     display: none;
   }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1300px) {
     padding: 1rem 10px;
     .nav-menu-icon {
       display: none;
@@ -85,7 +87,7 @@ const StyledNav = styled.nav`
       flex: 0.95;
     }
   }
-  @media (max-width: 1000px) {
+  @media (max-width: 1100px) {
     .flexed-list {
       display: ${(props) => (props.menu ? "flex" : "none")};
       position: absolute;
@@ -95,13 +97,13 @@ const StyledNav = styled.nav`
       width: 30rem;
       flex: 1;
     }
-    .button-div1{
+    .button-div1 {
       min-width: 20rem;
       display: flex;
       justify-content: space-between;
     }
   }
-  @media(max-width:600px){
+  @media (max-width: 600px) {
     flex-direction: column;
     min-height: 10rem;
   }
