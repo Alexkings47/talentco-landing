@@ -100,14 +100,25 @@ const StyledSection = styled.section`
     height: 100%;
     box-shadow: 0px 18px 52.8537px rgba(215, 228, 249, 0.5);
   }
-  @media(max-width:1000px) {
-    .underlay{
+  @media (max-width: 1000px) {
+    .underlay {
       min-width: 30rem;
     }
   }
   @media (max-width: 800px) {
     .underlay {
       min-width: 25rem;
+    }
+    @media (max-width: 500px) {
+      .testimony-text {
+        font-size: 20px;
+      }
+      .testimony {
+        padding: 1.5rem 2rem;
+      }
+      .underlay {
+        min-width: 23rem;
+      }
     }
   }
 `;

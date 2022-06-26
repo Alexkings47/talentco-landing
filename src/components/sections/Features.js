@@ -50,18 +50,16 @@ export default Features;
 const StyledSection = styled.section`
   background: url(${background}) no-repeat center/ cover;
   position: relative;
-  background-color: green;
   color: white;
-  padding: 1rem 0;
+  padding: 3rem 0 0 0;
   margin-top: 3rem;
-  border: 1px solid red;
 
   .item-box {
     display: flex;
     flex-direction: column;
     max-width: 70rem;
     margin: 0 auto;
-    border: 1px solid red;
+
   }
   .item1,
   .item2 {
@@ -76,7 +74,8 @@ const StyledSection = styled.section`
   }
   .item2 {
     align-self: flex-end;
-    /* margin-top: 2rem; */
+    margin-bottom: -3rem;
+    margin-top: 1rem;
   }
   h3 {
     color: white;
@@ -84,13 +83,14 @@ const StyledSection = styled.section`
     font-size: 36px;
     line-height: 44px;
   }
-  .feature-img2 {
+  .feature-img {
     width: 430px;
     height: 548px;
   }
   .feature-img2 {
     width: 430px;
     height: 548px;
+   
   }
   .featured-text,
   .featured-text2 {
@@ -105,20 +105,46 @@ const StyledSection = styled.section`
   }
 
   @media (max-width: 1000px) {
-  }
-
-  @media (max-width: 800px) {
-    .item-box {
-      max-width: 95%;
+    .item-box > * {
+      max-width: 90%;
     }
+    .featured-text,
+    .featured-text2 {
+      max-width: 50%;
+      min-height: 23rem;
+    }
+    .featured-text2 {
+      min-height: 25rem;
+    }
+  }
+  @media (max-width: 850px) {
     .item-box > * {
       align-self: center;
+      max-width: 100%;
+    }
+    .feature-img,
+    .feature-img2 {
+      width: 350px;
     }
   }
-  @media (max-width: 600px) {
+  @media (max-width: 650px) {
+    .item-box {
+      padding-top: 4rem;
+    }
     .item1,
     .item2 {
       flex-direction: column;
+    }
+    .feature-img,
+    .feature-img2 {
+      width: 380px;
+      height: 450px;
+    }
+    .featured-text,
+    .featured-text2 {
+      max-width: 350px;
+      text-align: center;
+      align-items: center;
     }
   }
 `;
