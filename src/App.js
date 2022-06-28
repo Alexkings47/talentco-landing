@@ -1,10 +1,16 @@
 import './App.css';
 import Home from './pages/Home'
+import Container from './components/sections/Container';
+
+
+
 
 function App() {
   return (
     <div>
-      <Home />
+      <Container>
+        <Home />
+      </Container>
     </div>
   );
 }

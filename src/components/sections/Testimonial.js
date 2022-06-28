@@ -63,7 +63,7 @@ const StyledSection = styled.section`
     border: 1px solid white;
   }
   .testimony {
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
     background: url(${quotes});
     background-color: white;
     background-repeat: no-repeat;
