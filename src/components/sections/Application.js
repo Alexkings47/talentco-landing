@@ -47,7 +47,7 @@ const StyledSection = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    min-height: 17rem;
+    min-height: 19rem;
     padding-bottom: 1rem;
   }
  
